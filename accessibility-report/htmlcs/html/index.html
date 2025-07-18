@@ -1,0 +1,5160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        .pills, .pillspage {
+            border: 5px solid #424242
+        }
+
+        body {
+            background-color: #424242;
+            font-family: Roboto, sans-serif
+        }
+
+        .header {
+            color: #ffc400;
+            text-align: center;
+            margin: 20px
+        }
+
+        .pills {
+            padding: 35px 5px
+        }
+
+        .pillspage {
+            padding: 15px 5px
+        }
+
+        .specs {
+            font-size: 10px !important
+        }
+
+        .time {
+            margin-bottom: 10px !important
+        }
+
+        .pagespechold {
+            padding-top: 12px
+        }
+
+        .pagespec {
+            border: 2px solid #6c757d;
+            padding: 8px 5px;
+            font-size: 18px
+        }
+
+        .viewreport {
+            padding-top: 10px
+        }
+
+        hr {
+            margin-top: 0 !important;
+            margin-bottom: .5em !important
+        }
+
+        .btncollapse {
+            padding: 5px
+        }
+
+        .tab-content > .tab-pane {
+            margin-top: 10px;
+        }
+
+        .issuenode {
+            margin-left: 60px;
+            margin-bottom: 5px
+        }
+
+        .alert {
+            margin: 5px !important
+        }
+
+        .alert, .badge, .btn, .card {
+            border-radius: 0 !important
+        }
+
+        .footer {
+            min-height: 60px
+        }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            color: #ffc400;
+            background-color: dimgrey;
+            border-color: transparent transparent #f3f3f3;
+            border-bottom: 6px solid #eee !important;
+            font-size: 20px;
+        }
+
+        .nav-tabs .nav-link {
+            border: none !important;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            color: #ffc400;
+            font-size: 20px;
+        }
+
+        table {
+            font-size: .8rem !important;
+        }
+
+        .btn-link {
+            padding: inherit !important;
+            font-size: 0.8rem !important;
+        }
+
+        .badge-pill {
+            border-radius: 10rem !important;
+            white-space: normal;
+        }
+
+    </style>
+    <title>Report</title>
+</head><body>
+<h1 class="header"><i class="fas fa-universal-access"></i> Accessibility Report</h1><div class="container">
+    <br>
+    <h3 class="text-white text-center"><i class="fas fa-chart-pie text-info"></i> Dashboard</h3>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-6 pills badge badge-primary">
+                <div class="section">
+                    <h6>Number of URL's</h6>
+                    <h1>176</h1>
+                </div>
+            </div>
+            <div class="col-sm-6 pills badge badge-danger">
+                <div class="section">
+                    <h6>Errors</h6>
+                    <h1>3.930</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 pills badge badge-warning">
+                <div class="section">
+                    <h6>Warnings</h6>
+                    <h1>6.143</h1>
+                </div>
+            </div>
+            <div class="col-sm-6 pills badge badge-info">
+                <div class="section ">
+                    <h6>Notices</h6>
+                    <h1>20.133</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row justify-content-md-center">
+            <div class="col-sm">
+                <canvas id="myChart" width="400" height="250"></canvas>
+            </div>
+        </div>
+    </div>
+</div>    <br>
+    <h3 class="text-white text-center"><i class="fas fa-file text-info"></i> Page Statistics</h3>
+    <div class="row">
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:57:17</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">50</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoek2uryg9bg.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:19:4</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">672</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mconwqdqhh6bo.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:53:48</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvq2bmq8tg7v.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:50:14</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcomvn2bhx2t6.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/checkbox</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:51:57</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">45</div>
+    <div class="col-2 pagespec badge badge-warning">9</div>
+    <div class="col-2 pagespec badge badge-info">77</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcunf2o8cvb0c.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:4:19</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">36</div>
+    <div class="col-2 pagespec badge badge-warning">236</div>
+    <div class="col-2 pagespec badge badge-info">674</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcondqzcfxwpn.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 22:11:26</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">41</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuytxdqli5hj.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 18:13:10</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuqbicyxbel6.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/radio-button</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:55:42</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mculeq8t2eag1.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:19:47</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuhzdimviesu.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:20:31</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">672</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mconylbpu4fsn.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:26:8</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvxnedmn2shk.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/modal-dialogs</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 13:13:32</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvv20v7dy1o4.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 12:38:38</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvtt5nrsw5st.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:16:42</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">39</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvqvsde81bhj.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>Fútbol - Últimas noticias</h5>
+<h6 class="text-truncate">https://www.marca.com/futbol.html?intcmp=MENUPROD&s_kw=futbol</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 13:37:19</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">34</div>
+    <div class="col-2 pagespec badge badge-warning">273</div>
+    <div class="col-2 pagespec badge badge-info">717</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoqpcqxqdu4o.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 6:58:15</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcocg5j03xooz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 21:59:55</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuyf4chma9qz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:57:24</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoek810l3hvx.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:57:19</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">232</div>
+    <div class="col-2 pagespec badge badge-info">669</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcon4rkr7lynj.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/checkbox</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:10:13</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">40</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcujs8li013wb.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:50:42</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvs3ifn1iwud.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/elements</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:23:38</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">34</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcodcsunj1sv7.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:56:5</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvypwh60lp48.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:21:48</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvxhtbpfubex.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>Fútbol - Últimas noticias</h5>
+<h6 class="text-truncate">https://www.marca.com/futbol.html?intcmp=MENUPROD&s_kw=futbol</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:59:17</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">14</div>
+    <div class="col-2 pagespec badge badge-warning">243</div>
+    <div class="col-2 pagespec badge badge-info">670</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcon7af61zv7o.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:19:6</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">672</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mconwrucc4t4z.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:31:5</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvp949bjep8h.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:49:10</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuj15yeq60mp.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/webtables</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:55:13</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">15</div>
+    <div class="col-2 pagespec badge badge-warning">16</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcunj9d2zcj53.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:24:18</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcukac78zsxtl.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:31:15</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvp9c1p15xro.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 18:19:29</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuqjn0wni0q3.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>Fútbol - Últimas noticias</h5>
+<h6 class="text-truncate">https://www.marca.com/futbol.html?intcmp=MENUPROD&s_kw=futbol</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:57:58</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">15</div>
+    <div class="col-2 pagespec badge badge-warning">243</div>
+    <div class="col-2 pagespec badge badge-info">670</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcon5l6p0r8tg.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 15:6:8</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvz2uha7epq6.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 18:11:43</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuq9nlexdqir.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/broken</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 21:0:16</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">9</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuwae6ozq7ez.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5></h5>
+<h6 class="text-truncate">https://demoqa.com/sample</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 12:39:33</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">496 X 346</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">2</div>
+    <div class="col-2 pagespec badge badge-warning">0</div>
+    <div class="col-2 pagespec badge badge-info">23</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvtubzjp7jg5.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/elements</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:43:11</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">34</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoe1xmzvf58k.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:40:19</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvrq5l0n3t6k.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5></h5>
+<h6 class="text-truncate">https://demoqa.com/sample</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 12:34:21</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">496 X 346</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">2</div>
+    <div class="col-2 pagespec badge badge-warning">0</div>
+    <div class="col-2 pagespec badge badge-info">23</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvtnna5mnoyj.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:54:49</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvq3msclhuiz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:52:0</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuj4t3gzcmou.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 22:13:58</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuyx6h7dz0xe.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/elements</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:30:3</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcodl273zs898.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/frames</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 12:50:25</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvu8ay1mp642.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:56:15</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvyq4qeczacr.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/checkbox</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:11:9</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">45</div>
+    <div class="col-2 pagespec badge badge-warning">9</div>
+    <div class="col-2 pagespec badge badge-info">76</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcujtfibj7p0q.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:53:55</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">675</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcon0dxoi2b33.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 18:11:56</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuq9x3kdkwcg.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/elements</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:41:10</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">35</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcodzcfucznh8.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:46:6</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuix85s142ig.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 22:3:8</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuyj8p01s8ti.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:8:54</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvqlrala6lms.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:20:33</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">672</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mconyn8uwrji9.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/nestedframes</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 12:42:32</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">34</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvty656i8h0j.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:47:58</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">51</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoe83j16q4g6.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:52:4</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">675</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcomy07pkd442.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>Fútbol - Últimas noticias</h5>
+<h6 class="text-truncate">https://www.marca.com/futbol.html?intcmp=MENUPROD&s_kw=futbol</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:7:6</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">13</div>
+    <div class="col-2 pagespec badge badge-warning">243</div>
+    <div class="col-2 pagespec badge badge-info">670</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mconhbyldz27i.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 22:11:35</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuyu4klrb1rd.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:16:28</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">39</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvqvh8a50ohs.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:41:50</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">39</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvrs3zc5ilqz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 18:12:59</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuqb9khp4g03.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:53:1</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvq1bvkq90t5.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:21:36</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvxhkbei1aoo.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 10/7/2025 9:33:13</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcx2mjtyjk83k.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 17:56:53</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcupqkczgvuit.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 10/7/2025 9:33:27</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">39</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcx2mulmsfj95.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/webtables</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:45:9</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">15</div>
+    <div class="col-2 pagespec badge badge-warning">16</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcun6b8kws1js.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:5:22</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvqh7cwy88gl.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 9:41:39</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">52</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoiaaleqlqyj.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:30:50</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvp8sxdwdtlw.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:11:21</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcocx01ofgdgo.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:56:36</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvq5xm5ngien.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:19:49</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuhzes2v1ojf.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:42:19</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">39</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvrspz1s9k1z.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/elements</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:26:38</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">35</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcodgnp76bevo.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 10/7/2025 9:26:18</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcx2dnofzhgt3.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 6:35:11</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcobmi1d0ysdl.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:8:29</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoctb7v2pc1u.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/radio-button</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:39:0</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">40</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcukt92sc6rpx.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/elements</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:26:31</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">34</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcukd729ahith.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 17:32:36</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">40</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuovcmz6g5rz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 22:13:37</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuywpymdqzra.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:19:49</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuhzfhy4wv05.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:4:55</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">674</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mconejhxe9m83.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 15:6:20</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvz3333n5txy.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:46:17</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvpsnrgatrem.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:51:11</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvs44y1ktg9j.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:52:32</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvq0pbl5plo2.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alertsWindows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:32:55</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvpbh7vlvv6d.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 10/7/2025 9:26:33</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcx2dzax0g4ps.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:42:9</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvrsi9v7tx6d.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:58:51</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">233</div>
+    <div class="col-2 pagespec badge badge-info">672</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcon6qmgs23oi.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:37:59</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuims67hw4ex.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:53:50</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvyn0x1bss7r.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 18:4:54</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuq0vivqcr0p.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/radio-button</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:27:8</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcukdzwmrd4v3.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:0:9</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">232</div>
+    <div class="col-2 pagespec badge badge-info">669</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcon8e5iassyi.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:40:9</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvrpy51qou7l.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:40:4</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuipgps8785i.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/radio-button</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:30:43</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">40</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcukiluwjvtoe.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:12:24</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvx5qfbfcotw.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 13:56:4</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">49</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuh4vn2vepkz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:33:52</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuihhsidhxul.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 17:17:23</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuobs7sdwbcq.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 15:1:15</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvywjrlyrgin.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:25:32</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcukbxygp868b.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/checkbox</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:0:59</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">40</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcujgdcuvfey7.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>502 Bad Gateway</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:36:30</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">1</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">24</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuikvpanlwks.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:52:59</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvq1ahm1syqa.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/webtables</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:40:48</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">15</div>
+    <div class="col-2 pagespec badge badge-warning">16</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcun0qdi171qp.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:8:41</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvqlgz095asy.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:50:52</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">39</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvs3psqjo3go.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:57:15</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvyrej49gwdn.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:57:15</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcujbk56676p5.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/webtables</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:53:42</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">15</div>
+    <div class="col-2 pagespec badge badge-warning">16</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcunhbhj3j4o5.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 8:1:7</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">52</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoep0bky61w2.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:22:33</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcodbeau6vfhl.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:51:50</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">49</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcunexbkug4w7.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:36:49</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuila0eq7f47.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>Fútbol - Últimas noticias</h5>
+<h6 class="text-truncate">https://www.marca.com/futbol.html?intcmp=MENUPROD&s_kw=futbol</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:1:46</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">18</div>
+    <div class="col-2 pagespec badge badge-warning">244</div>
+    <div class="col-2 pagespec badge badge-info">672</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mconagxq3equ4.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:54:6</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">675</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcon0m4shyloj.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/elements</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:46:24</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">35</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoe631ufl7tz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:4:54</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">674</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mconei46qdvnl.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:38:11</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvpi94qxc7lo.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/modal-dialogs</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 13:13:44</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvv2a4ufbro0.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:14:9</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvx7z3o1qmoa.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 22:3:18</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">41</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuyjgkf8hqq0.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:26:19</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvxnmppssriz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:52:30</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">36</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvq0nkr36gis.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5></h5>
+<h6 class="text-truncate">https://demoqa.com/sample</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 12:36:23</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">496 X 346</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">2</div>
+    <div class="col-2 pagespec badge badge-warning">0</div>
+    <div class="col-2 pagespec badge badge-info">23</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvtq98pro6vq.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/radio-button</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:51:46</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">40</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuneu51g48o7.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:32:56</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuiga2x48jug.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/checkbox</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:47:45</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">45</div>
+    <div class="col-2 pagespec badge badge-warning">9</div>
+    <div class="col-2 pagespec badge badge-info">76</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcun9njuqweic.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:39:51</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvrpjrwrtikh.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 18:19:49</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuqk2kxds8ys.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/webtables</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:55:23</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">23</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcunjhiekee9w.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 15:1:25</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvywrzbw3lwq.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:35:20</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">725 X 533</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">40</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvpelea89ux8.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:53:39</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvyms7q3dz67.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:59:6</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvytsefxns5a.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 15:6:29</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvz3al7ptmgr.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 10/7/2025 9:26:44</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcx2e7per4nbu.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/radio-button</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:54:22</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">28</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">40</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mculd07rmzles.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 6:35:2</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcobmaxsotrrh.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:51:1</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvs3x9m60slz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>Fútbol - Últimas noticias</h5>
+<h6 class="text-truncate">https://www.marca.com/futbol.html?intcmp=MENUPROD&s_kw=futbol</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:26:2</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">18</div>
+    <div class="col-2 pagespec badge badge-warning">244</div>
+    <div class="col-2 pagespec badge badge-info">672</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoo5omgni02h.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 10:55:4</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvq3yh8l003k.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/webtables</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 15:56:42</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">23</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mculg0cp5r1e6.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:3:40</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvqf0p8ye3pp.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 22:11:15</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuytowqu9l8d.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:40:50</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">49</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuiqfu5dviia.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/webtables</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:37:54</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">23</div>
+    <div class="col-2 pagespec badge badge-info">45</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcumwzojc2c1i.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/broken</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 21:59:20</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">32</div>
+    <div class="col-2 pagespec badge badge-warning">9</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuyed30826gl.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:58:56</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvytkimkggea.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 12:4:20</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">35</div>
+    <div class="col-2 pagespec badge badge-warning">236</div>
+    <div class="col-2 pagespec badge badge-info">674</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcondsbtl1drq.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/elements</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:24:26</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">35</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoddtveec9oh.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 10/7/2025 9:33:37</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcx2n2uswjjb3.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:57:3</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvyr5o91hryw.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:14:19</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvx879n05hcy.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows#google_vignette</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:29:42</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">5</div>
+    <div class="col-2 pagespec badge badge-warning">2</div>
+    <div class="col-2 pagespec badge badge-info">28</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvxrz1iuuyba.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/alerts</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 11:50:27</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">31</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvs36xpjfmqz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 6:32:53</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcobjjatvgu52.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/nestedframes</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 12:49:35</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">29</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">35</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvu78i4n8kh9.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 7:55:6</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1280 X 533</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">51</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoeh9t9v5ig7.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:50:24</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcomvutyg9tcg.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 16:20:56</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">51</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcumb653slh0f.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 9:6:21</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">49</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcoh0vzo4jm1d.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 14:44:33</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">4</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuiv835m67cy.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/upload-download</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 22:13:48</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">42</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuywz0ei7imz.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/text-box</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 15/7/2025 8:41:3</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">37</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">49</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_md45ypxxgpr66.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>MARCA - Diario online líder en información ...</h5>
+<h6 class="text-truncate">https://www.marca.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 11:52:14</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">33</div>
+    <div class="col-2 pagespec badge badge-warning">235</div>
+    <div class="col-2 pagespec badge badge-info">675</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcomy88hjg3v8.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/buttons</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 8/7/2025 18:19:40</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">38</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcuqjvlbes4st.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/browser-windows</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 9/7/2025 14:29:31</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">30</div>
+    <div class="col-2 pagespec badge badge-warning">8</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcvxrqlpfihyq.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-6 pillspage badge badge-secondary">
+<h5>DEMOQA</h5>
+<h6 class="text-truncate">https://demoqa.com/</h6>
+<div class="time">
+    <span class="text-warning"><i class="fas fa-clock"></i> 4/7/2025 6:32:44</span>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <span class="specs">STANDARD : </span>
+        <span class="badge badge-success">WCAG2AA</span>
+    </div>
+
+    <div class="col-4">
+        <span class="specs">BROWSER SIZE : </span>
+        <span class="badge badge-success">1010 X 591</span>
+    </div>
+</div>
+<div class="row justify-content-center pagespechold">
+    <div class="col-2 pagespec badge badge-danger">3</div>
+    <div class="col-2 pagespec badge badge-warning">6</div>
+    <div class="col-2 pagespec badge badge-info">37</div>
+</div>
+<div class="row">
+    <div class="col viewreport">
+        <a href="id_mcobjc3y2v4l0.html" target="_blank" class="btn btn-outline-light btn-sm" role="button">View Report</a>
+    </div>
+</div>
+</div>
+    </div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="footer"></div>
+    </div>
+</div></div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var barChartData = {
+        labels: [ 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'Fútbol - Últimas noticias', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'Fútbol - Últimas noticias', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'Fútbol - Últimas noticias', 'DEMOQA', 'DEMOQA', 'DEMOQA', '', 'DEMOQA', 'DEMOQA', '', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'Fútbol - Últimas noticias', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', '502 Bad Gateway', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'Fútbol - Últimas noticias', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', '', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'Fútbol - Últimas noticias', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'DEMOQA', 'MARCA - Diario online líder en información deportiva', 'DEMOQA', 'DEMOQA', 'DEMOQA',],
+        datasets: [{
+                label: 'Errors',
+                backgroundColor: '#dc3545',
+                data: [ 37, 33, 32, 3, 45, 36, 30, 30, 28, 4, 32, 30, 29, 4, 31, 34, 3, 30, 3, 28, 28, 32, 29, 30, 5, 14, 33, 30, 4, 15, 4, 30, 30, 15, 5, 30, 32, 2, 28, 31, 2, 3, 4, 30, 29, 30, 5, 45, 33, 31, 28, 4, 30, 31, 32, 29, 37, 33, 13, 30, 31, 32, 30, 3, 30, 5, 30, 30, 15, 32, 37, 29, 4, 3, 3, 31, 29, 30, 3, 3, 28, 28, 30, 29, 3, 33, 30, 4, 31, 3, 28, 30, 31, 33, 4, 5, 30, 28, 29, 31, 4, 28, 5, 37, 4, 31, 30, 4, 28, 1, 4, 15, 32, 32, 5, 4, 15, 37, 3, 37, 4, 18, 33, 28, 33, 32, 29, 30, 30, 5, 4, 2, 28, 4, 45, 32, 30, 31, 5, 32, 30, 5, 5, 5, 28, 3, 32, 18, 32, 31, 32, 29, 37, 31, 32, 30, 35, 29, 5, 30, 5, 5, 31, 3, 29, 37, 3, 37, 37, 4, 30, 37, 33, 30, 30, 3,]
+        }, {
+                label: 'Warnings',
+                backgroundColor: '#ffc107',
+                data: [ 8, 235, 8, 6, 9, 236, 8, 8, 8, 6, 235, 8, 8, 6, 8, 273, 6, 8, 6, 232, 8, 8, 8, 8, 2, 243, 235, 8, 6, 16, 6, 8, 8, 243, 2, 8, 9, 0, 8, 8, 0, 6, 6, 8, 8, 8, 2, 9, 235, 8, 8, 6, 8, 8, 235, 8, 8, 235, 243, 8, 8, 8, 8, 6, 8, 2, 8, 8, 16, 8, 8, 8, 6, 6, 6, 8, 8, 8, 6, 6, 8, 8, 8, 8, 6, 235, 8, 6, 8, 6, 8, 8, 8, 233, 6, 2, 8, 8, 232, 8, 6, 8, 2, 8, 6, 8, 8, 6, 8, 2, 6, 16, 8, 8, 2, 6, 16, 8, 6, 8, 6, 244, 235, 8, 235, 8, 8, 8, 8, 2, 6, 0, 8, 6, 9, 8, 8, 23, 2, 8, 8, 2, 2, 2, 8, 6, 8, 244, 8, 23, 8, 8, 8, 23, 9, 8, 236, 8, 2, 8, 2, 2, 8, 6, 8, 8, 6, 8, 8, 6, 8, 8, 235, 8, 8, 6,]
+        }, {
+                label: 'Notices',
+                backgroundColor: '#17a2b8',
+                data: [ 50, 672, 38, 37, 77, 674, 41, 37, 42, 37, 672, 37, 36, 36, 39, 717, 37, 42, 37, 669, 40, 38, 34, 38, 28, 670, 672, 45, 37, 45, 36, 45, 38, 670, 28, 37, 38, 23, 34, 38, 23, 36, 37, 42, 37, 37, 28, 76, 675, 37, 35, 37, 42, 38, 672, 34, 51, 675, 670, 42, 39, 39, 37, 36, 37, 28, 37, 39, 45, 38, 52, 45, 37, 37, 37, 39, 35, 37, 37, 37, 40, 34, 40, 42, 37, 674, 37, 37, 38, 36, 36, 38, 38, 672, 37, 28, 37, 42, 669, 38, 37, 40, 28, 49, 37, 37, 37, 36, 40, 24, 36, 45, 38, 39, 28, 37, 45, 52, 37, 49, 37, 672, 675, 35, 674, 38, 38, 37, 41, 28, 36, 23, 40, 37, 76, 38, 37, 45, 28, 40, 38, 28, 28, 28, 40, 37, 38, 672, 38, 45, 38, 42, 49, 45, 38, 37, 674, 35, 28, 37, 28, 28, 38, 37, 35, 51, 37, 51, 49, 37, 42, 49, 675, 38, 37, 37,]
+        }]
+
+};
+var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: barChartData,
+        options: {
+                tooltips: {
+                        mode: 'index',
+                        intersect: false,
+                        callbacks: {
+                                title: function (tooltipItems, data) {
+                                        var idx = tooltipItems[0].index;
+                                        return data.labels[idx];
+                                }
+                        }
+                },
+                scales: {
+                        xAxes: [{
+                                ticks: {
+                                        callback: function (value) {
+                                                return value.substr(0, 10);
+                                        },
+                                        beginAtZero: true
+                                },
+                                stacked: true
+                        }],
+                        yAxes: [{
+                                stacked: true
+                        }]
+                }
+        }
+});
+</script>
+</body>
+</html>
